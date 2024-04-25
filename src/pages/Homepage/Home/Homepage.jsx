@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImage from "../../../assets/images/kerri-shaver-xepikEyPgmI-unsplash.jpg"
+import backgroundImage from "../../../assets/images/anu.jpeg"
 import PictureUploader from '../../uploadImage/PictureUploader';
 import GhostButton from '../../../components/Button/GhostButton/ghostButton';
 import {useNavigate} from "react-router-dom";
