@@ -108,10 +108,10 @@ const ImageGallery = () => {
         display: 'flex',
         flexDirection: 'column'
       }}
-      className='bg-contain bg-center bg-no-repeat h-screen sm:bg-cover bg-bl sm:p-16 flex flex-col justify-center '>
+      className='bg-contain bg-color-pink-300 bg-center bg-no-repeat h-screen sm:bg-cover bg-bl sm:p-16 flex flex-col justify-center '>
           {
             !isLoggedIn && (
-              <form onSubmit={handleLogin} className="w-full max-w-sm flex flex-col my-32 mx-16">
+              <form onSubmit={handleLogin} className="w-64 max-w-sm flex flex-col my-32 mx-16">
                 <div className="mb-4">
                   <label htmlFor="username" className="block text-gray-700 text-sm font-bold mb-2">Username:</label>
                   <input
@@ -139,6 +139,11 @@ const ImageGallery = () => {
                 >
                 {loading ? 'Logging in...' : 'Login'}                
                 </button>
+                <div className='text-red-700'>
+                  <p>
+                  Authorised users only
+                  </p>
+                </div>
               </form>
             )
  
@@ -147,10 +152,10 @@ const ImageGallery = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 ">
             {imageUrls.data?.map((obj, index) => (
               <div key={index} className="relative p-4">
-                <img src={obj.link}  alt="" onClick={() => openModal(obj.link)} />
-                <p className="text-gray-700">{obj.name}</p>
+                <img className='p-1' src={obj.link}  alt="" onClick={() => openModal(obj.link)} />
+                <p className="text-gray-700 p-1 font-semibold">Uploader: {obj.name}</p>
                 <button
-                className="absolute bottom--1 left-0 bg-white border border-gray-400 rounded-full p-2 m-2 text-gray-700 hover:bg-gray-400"
+                className="absolute bottom--1 left-0 bg-white border border-gray-400 rounded-full p-1 m-2 text-gray-700 hover:bg-gray-400"
                 onClick={(e) =>{
                 e.stopPropagation();
                 handleDownload(obj.link, index)}}>

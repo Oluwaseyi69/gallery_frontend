@@ -26,7 +26,7 @@ const Homepage = () => {
   
   }}
     className='bg-contain bg-center 
-    bg-no-repeat h-screen sm:bg-cover bg-bl'>
+    bg-no-repeat h-screen sm:bg-cover bg-bl '>
       <header className="bg-pink-600 p-5 mb-10">
         <div className="max-w-5xl m-auto">
           <div className=" text-xl font-bold text-white"> E-Gallery</div>

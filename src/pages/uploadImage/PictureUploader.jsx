@@ -82,11 +82,11 @@ const PictureUploader = () => {
   };
 
   return (
-    <div>
+    <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
       <div>
-        <form id="generate-form" className="mt-8">
+        <form id="generate-form" className="w-full max-w-sm flex flex-col my-1 mx-1 " >
           <input
             type="file"
             onChange={handleFileChange}
