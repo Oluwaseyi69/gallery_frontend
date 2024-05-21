@@ -82,11 +82,11 @@ const PictureUploader = () => {
   };
 
   return (
-    <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+    <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center p-16'>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
       <div>
-        <form id="generate-form" className="w-full max-w-sm flex flex-col my-1 mx-1 " >
+        <form id="generate-form" className="w-full max-w-sm flex flex-col my-1 mx-1  " >
           <input
             type="file"
             onChange={handleFileChange}
@@ -112,7 +112,7 @@ const PictureUploader = () => {
           <div className="flex items-center justify-center mt-4">
             <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 text-6xl mr-2" />{' '}
             <br />
-            <p className="text-lg text-200">Successfully Uploaded</p>
+            <p className="text-lg text-200 text-green-500">Successfully Uploaded</p>
           </div>
         )}
         {showFailureMessage && (
