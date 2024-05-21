@@ -1,6 +1,7 @@
 import React from 'react'
 import backgroundImage from "../../../assets/images/anu.jpeg"
 import PictureUploader from '../../uploadImage/PictureUploader';
+import GhostButton from '../../../components/Button/GhostButton/ghostButton';
 import {useNavigate} from "react-router-dom";
 
 
@@ -35,17 +36,16 @@ const Homepage = () => {
         </div>
         
       </header>
-      <nav>
-      <h1 className="text-3xl font-bold mb-5 md:text-4xl text-white">
-        
-      </div>
-        
+    
+      <h1 className="text-3xl font-bold mb-5 md:text-4xl text-white"> </h1>
+      
+              
       <main>
-    <div className="flex flex-col-reverse align-center justify-center p-20
-                m-auto md:max-w-4xl md:flex-row ">
-    <div className="w-full md:w-2/3 mr-24 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-10">
+        <div className="flex flex-col-reverse align-center justify-center p-20
+                    m-auto md:max-w-4xl md:flex-row ">
+        <div className="w-full md:w-2/3 mr-24 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-10">
 
-      <PictureUploader />  
+        <PictureUploader />  
     </div>
     <div className="w-full md:w-1/3 self-center">
       <img src="img/qr-code.svg"
