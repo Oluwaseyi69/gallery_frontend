@@ -25,11 +25,10 @@ const Homepage = () => {
     flexDirection: 'column'
   
   }}
-    className='bg-contain bg-center 
-    bg-no-repeat h-screen sm:bg-cover bg-bl '>
+    className='bg-contain bg-center bg-no-repeat h-screen sm:bg-cover bg-bl '>
       <header className="bg-pink-600 p-5 mb-10">
         <div className="max-w-5xl m-auto">
-          <div className=" text-xl font-bold text-white"> E-Gallery</div>
+          <div className=" text-xl font-bold text-white w-fit"> E-Gallery</div>
         </div>
         <div className="absolute top-0 right-0 font-bold text-xl mt-2 mr-5 ">
             <GhostButton text={"View Image"} padding={""} callBack={view}/>
@@ -45,15 +44,7 @@ const Homepage = () => {
     <div className="flex flex-col-reverse align-center justify-center p-20
                 m-auto md:max-w-4xl md:flex-row ">
     <div className="w-full md:w-2/3 mr-24 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-10">
-    
 
-      <p className="mb-4 text-white text-xl p-20">
-        {/* E-Gallery allow smartphone users to upload, view and relive memories... */}
-      </p>
-      <p  className="text-white mt-1 text-3xl">
-        {/* Kindly upload your
-        Picture */}
-      </p>
       <PictureUploader />  
     </div>
     <div className="w-full md:w-1/3 self-center">

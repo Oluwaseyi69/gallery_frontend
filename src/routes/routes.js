@@ -13,7 +13,6 @@ export const ROUTES = [
         element: < Homepage/>
       }
     ]
-
   },
   {
     path: '/view',

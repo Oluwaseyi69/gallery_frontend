@@ -82,7 +82,7 @@ const PictureUploader = () => {
   };
 
   return (
-    <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
+    <div className='flex items-center justify-center'>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
       <div>

@@ -77,7 +77,6 @@ const ImageGallery = () => {
           console.error('Error fetching image URLs:', error);
           setErrMsg('Failed to view');
         }
-
       }
 
     fetchImageUrls();
