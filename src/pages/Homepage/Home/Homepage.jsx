@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImage from "../../../assets/images/anu.jpeg"
+import backgroundImage from "../../../assets/images/aaron-burden-FHWgqOniOSY-unsplash.jpg"
 import PictureUploader from '../../uploadImage/PictureUploader';
 import GhostButton from '../../../components/Button/GhostButton/ghostButton';
 import {useNavigate} from "react-router-dom";
@@ -29,9 +29,9 @@ const Homepage = () => {
     className='bg-contain bg-center bg-no-repeat h-screen sm:bg-cover bg-bl '>
       <header className="bg-pink-600 p-5 mb-10">
         <div className="max-w-5xl m-auto">
-          <div className=" text-xl font-bold text-white w-fit"> E-Gallery</div>
+          <div className=" text-xl font-bold text-white w-fit ml-70"> E-Gallery</div>
         </div>
-        <div className="absolute top-0 right-0 font-bold text-xl mt-2 mr-5 ">
+        <div className="absolute top-0 right-0 font-bold text-xl mt-2 mr-8 ">
             <GhostButton text={"View Image"} padding={""} callBack={view}/>
         </div>
         
@@ -47,12 +47,6 @@ const Homepage = () => {
 
         <PictureUploader />  
     </div>
-    <div className="w-full md:w-1/3 self-center">
-      <img src="img/qr-code.svg"
-       alt="" 
-       className="w-1/2 m-auto mb-10 md-:w-full"/>
-    </div>
-  
   </div>
 
 
