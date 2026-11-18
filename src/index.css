@@ -4,11 +4,46 @@
 
 body {
   margin: 0;
+  /* Matches the pages, so space added below them (e.g. under the upload toast) blends in. */
+  background-color: #FBF6EE;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Photo carousel: the side padding lets the first and last photos sit in the centre. */
+.carousel-track {
+  --slide-width: 78vw;
+  padding-inline: calc((100% - var(--slide-width)) / 2);
+}
+.carousel-slide {
+  width: var(--slide-width);
+}
+@media (min-width: 640px) {
+  .carousel-track {
+    --slide-width: 44vw;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-track {
+    --slide-width: min(30vw, 440px);
+  }
+}
+
+/* Hide the scrollbar on the photo carousel; it still scrolls by swipe, trackpad and buttons. */
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
 
 code {

@@ -1,3 +1,24 @@
+# Wedding invitation and photo gallery
+
+| Page | What it is |
+|---|---|
+| `/` | The invitation, with RSVP form |
+| `/upload` | Guests upload up to 4 photos at a time |
+| `/view` | The couple's login: uploaded photos and RSVPs |
+
+## Run locally
+
+1. Start the backend first (see `new_gallery_backend/README.md`). It runs on http://localhost:8080.
+2. Then:
+   ```bash
+   npm install   # first time only
+   npm start
+   ```
+   The site opens at http://localhost:3000. While `npm start` is running it talks to the
+   local backend, set in `.env.development`. `npm run build` (what Vercel runs) uses the live Render backend.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
