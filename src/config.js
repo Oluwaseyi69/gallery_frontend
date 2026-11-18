@@ -1,6 +1,9 @@
-// Backend address. Set REACT_APP_API_URL to override it, e.g. in .env.development
-// to use a backend running on your machine. Falls back to the live Render server.
-export const API_URL = (process.env.REACT_APP_API_URL || 'https://gallery-backend-z7i7.onrender.com').replace(/\/$/, '');
+// Backend address.
+// On the live site this is "/backend": Vercel forwards those requests to the Render server
+// (see vercel.json), so guests' browsers only ever connect to the site's own address.
+// Some networks and security filters block onrender.com directly.
+// Set REACT_APP_API_URL to override it, e.g. in .env.development to use a backend on your machine.
+export const API_URL = (process.env.REACT_APP_API_URL || '/backend').replace(/\/$/, '');
 
 // Where guests' photos are uploaded. Override to use a different Cloudinary account or preset.
 export const CLOUDINARY_UPLOAD_URL =
